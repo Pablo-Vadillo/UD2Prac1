@@ -19,7 +19,7 @@ public class Granjero implements Runnable {
     public void run() {
         for (int i = 0; i < cantidadVerduras; i++) {
             try {
-                Thread.sleep(new Random().nextInt(50));
+                Thread.sleep(new Random().nextInt(500));
                 String tipoVerdura = tiposVerduras[new Random().nextInt(tiposVerduras.length)];
                 Verdura verdura = new Verdura(tipoVerdura);
                 restaurante.plantarVerdura(verdura, nombre);

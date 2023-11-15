@@ -14,6 +14,5 @@ public class ExperimentoDos {
         granjero1.start();
         cliente1.start();
 
-
     }
 }
