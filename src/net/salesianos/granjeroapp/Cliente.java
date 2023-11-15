@@ -17,7 +17,7 @@ public class Cliente implements Runnable {
     public void run() {
         for (int i = 0; i < cantidadVerduras; i++) {
             try {
-                Thread.sleep(new Random().nextInt(1000));
+                Thread.sleep(new Random().nextInt(500));
                 Verdura verdura = restaurante.consumirVerdura(nombre);
             } catch (InterruptedException e) {
                 e.printStackTrace();
